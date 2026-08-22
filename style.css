@@ -1,0 +1,132 @@
+/* ToDoDaily site — 앱의 말차 팔레트(MatchaColors.xcassets)와 동일 값 */
+:root {
+  --bg: #F1F4EE;
+  --card: #F7FBF6;
+  --ink: #2C3A2A;
+  --muted: #627161;
+  --matcha: #527848;
+  --line: rgba(82, 120, 72, 0.16);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #181F19;
+    --card: #252E26;
+    --ink: #E2F2DD;
+    --muted: #9AAD99;
+    --matcha: #B7E1A1;
+    --line: rgba(183, 225, 161, 0.16);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 20px 40px;
+}
+
+/* 제목만 세리프 — 다도의 차분함. 본문은 시스템 산세리프로 조용하게 */
+h1, h2, .brand {
+  font-family: "Gowun Batang", "Apple SD Gothic Neo", serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 30px; margin: 16px 0 6px; }
+h2 { font-size: 19px; margin: 0 0 10px; color: var(--ink); }
+
+a { color: var(--matcha); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hero { text-align: center; margin-bottom: 36px; }
+.hero .tagline { color: var(--muted); margin: 0 0 20px; }
+.hero svg { display: block; margin: 0 auto; }
+
+/* 앱 카드와 같은 문법: CardBackground + 16% 말차 스트로크 + 18px 라운드 */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin: 0 0 16px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--matcha);
+  color: var(--bg);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 600;
+}
+.btn:hover { text-decoration: none; opacity: 0.92; }
+
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+
+ul { padding-left: 20px; margin: 8px 0; }
+li { margin: 4px 0; }
+
+/* FAQ — 네이티브 details, JS 없음 */
+details {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 2px;
+}
+details:last-of-type { border-bottom: none; }
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style-position: outside;
+}
+summary::marker { color: var(--matcha); }
+details p, details ul { margin-top: 8px; margin-bottom: 4px; }
+
+/* 처리방침 섹션 번호 — 정책 조항은 실제 열거라 번호가 정보다 */
+.policy h2 { margin-top: 34px; }
+.policy h2 .no {
+  color: var(--matcha);
+  font-variant-numeric: tabular-nums;
+  margin-right: 8px;
+}
+.callout {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--matcha);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 20px 0 8px;
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+/* 서명: 앱의 성장 단계 사다리(씨앗 → 다 자란 차나무) */
+.stages {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 14px;
+  opacity: 0.9;
+}
+.stages svg { display: block; }
+
+@media (max-width: 480px) {
+  .wrap { padding: 32px 16px 32px; }
+  h1 { font-size: 26px; }
+}

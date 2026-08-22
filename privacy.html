@@ -4,32 +4,107 @@
   <meta charset="utf-8" />
   <title>ToDoDaily 개인정보 처리방침</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <style>
-    body { font-family: -apple-system, system-ui, Arial, sans-serif; margin: 24px; max-width: 760px; }
-    h1,h2 { color: #2b2b2b; }
-    .muted { color: #666; }
-  </style>
+  <meta name="description" content="ToDoDaily 개인정보 처리방침 — 개인정보를 수집하지 않습니다" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <h1>개인정보 처리방침</h1>
-  <p class="muted">마지막 업데이트: 2025-08-30</p>
+<div class="wrap policy">
 
-  <h2>1. 수집하는 개인정보</h2>
-  <p>이 앱은 사용자의 어떤 개인 정보도 수집하거나 외부로 전송하지 않습니다. 모든 데이터(할 일, 메모, 설정)는 기기 내에 로컬로 저장됩니다.</p>
+  <header class="hero">
+    <svg width="56" height="56" viewBox="0 0 76 76" aria-hidden="true">
+      <ellipse cx="38" cy="64" rx="16" ry="3" fill="var(--line)"/>
+      <path d="M21 40 a17 17 0 0 0 34 0 z" fill="var(--card)" stroke="var(--matcha)" stroke-width="1.5"/>
+      <ellipse cx="38" cy="40" rx="17" ry="4" fill="var(--matcha)" opacity="0.45"/>
+      <path d="M38 40 C38 32 37.5 27 38 21" stroke="var(--matcha)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="30" cy="26" rx="8" ry="4" transform="rotate(-32 30 26)" fill="var(--matcha)"/>
+      <ellipse cx="46" cy="21" rx="8" ry="4" transform="rotate(26 46 21)" fill="var(--matcha)"/>
+    </svg>
+    <h1>개인정보 처리방침</h1>
+    <p class="muted small">마지막 업데이트: 2026-08-22 · <a href="#english">English version below</a></p>
+  </header>
 
-  <h2>2. 데이터 보관 및 처리</h2>
-  <p>사용자가 생성한 할 일 데이터는 iOS의 UserDefaults에 JSON 형식으로 저장됩니다. 네트워크 전송, 서버 저장, 제3자 제공은 없습니다.</p>
+  <div class="callout">
+    <strong>한 줄 요약</strong> — ToDoDaily는 어떤 개인정보도 수집하지 않아요. 계정도, 광고도, 분석 도구도, 개발자 서버도 없어요. 모든 데이터는 회원님의 기기와 회원님의 iCloud 안에만 있습니다.
+  </div>
 
-  <h2>3. 알림 권한</h2>
-  <p>앱은 로컬 알림(일일 리마인더, 마감 알림) 제공을 위해 알림 권한을 요청할 수 있습니다. 권한은 기기 설정에서 언제든 변경할 수 있습니다.</p>
+  <h2><span class="no">1</span>수집하는 개인정보</h2>
+  <p>없습니다. ToDoDaily는 회원가입이 없고, 광고·분석(트래킹) SDK를 쓰지 않으며, 개발자가 운영하는 서버도 없습니다. 할 일·메모·설정 등 앱에서 만드는 모든 데이터는 개발자에게 전송되지 않습니다.</p>
 
-  <h2>4. 사용자 권리</h2>
-  <p>앱 내 설정에서 데이터를 내보낼 수 있으며, 앱 삭제 시 기기에 저장된 모든 데이터는 제거됩니다.</p>
+  <h2><span class="no">2</span>저장과 iCloud 동기화</h2>
+  <p>할 일 데이터는 기기 안의 데이터베이스에 저장됩니다. 설정에서 iCloud 동기화를 켜면 <strong>회원님 Apple 계정의 비공개 iCloud 데이터베이스</strong>를 통해 아이폰·아이패드·맥·애플워치 사이에 동기화됩니다. 이 데이터는 Apple의 iCloud 보안 정책으로 보호되며, 개발자는 접근할 수 없습니다. 위젯과 워치 앱도 같은 데이터를 함께 사용할 뿐, 외부로 나가지 않습니다.</p>
 
-  <h2>5. 문의</h2>
-  <p>이메일: <a href="mailto:rsj1001@gmail.com?subject=ToDoDaily%20지원%20문의">rsj1001@gmail.com</a></p>
+  <h2><span class="no">3</span>온디바이스 AI</h2>
+  <p>"할 일 나누기" 기능은 전부 기기 안에서 처리됩니다. Apple Intelligence를 지원하는 기기에서는 온디바이스 AI(Apple FoundationModels)가, 그 외 기기에서는 내장 규칙이 단계를 만듭니다. 어떤 경우에도 할 일 내용이 외부 서버로 전송되지 않습니다.</p>
 
-  <hr />
-  <p class="muted">© 2025 DonghaRyu. All rights reserved.</p>
+  <h2><span class="no">4</span>앱이 요청하는 권한</h2>
+  <ul>
+    <li><strong>알림</strong> — 일일 리마인더와 마감 알림을 보내기 위해 요청합니다. 전부 기기에서 예약되는 로컬 알림입니다.</li>
+    <li><strong>캘린더 (선택)</strong> — 설정에서 켜면 애플 캘린더의 일정을 달력·오늘 탭에 읽기 전용으로 보여줍니다. "캘린더로 내보내기"를 쓸 때만 일정을 추가합니다.</li>
+    <li><strong>미리알림 (선택)</strong> — "미리알림으로 내보내기"를 쓸 때만 요청합니다.</li>
+    <li><strong>Siri·받아쓰기</strong> — Siri나 워치 받아쓰기로 할 일을 추가하면 음성 처리는 Apple의 개인정보 취급방침을 따릅니다.</li>
+  </ul>
+  <p>모든 권한은 기기의 설정 앱에서 언제든 바꿀 수 있고, 거부해도 앱의 기본 기능은 그대로 쓸 수 있습니다.</p>
+
+  <h2><span class="no">5</span>데이터 삭제와 이동</h2>
+  <p>앱을 삭제하면 기기에 저장된 데이터가 함께 제거됩니다. iCloud에 동기화된 데이터는 기기의 설정 앱 &gt; Apple 계정 &gt; iCloud에서 삭제할 수 있습니다. 앱의 설정 &gt; 데이터에서 애플 미리알림·캘린더로 내보내기를 지원합니다.</p>
+
+  <h2><span class="no">6</span>아동의 개인정보</h2>
+  <p>ToDoDaily는 만 4세 이상 등급이며, 연령과 무관하게 어떤 개인정보도 수집하지 않습니다.</p>
+
+  <h2><span class="no">7</span>방침의 변경</h2>
+  <p>방침이 바뀌면 이 페이지에서 갱신하고 상단의 날짜를 새로 적습니다.</p>
+
+  <h2><span class="no">8</span>문의</h2>
+  <p>개인정보 관련 질문은 <a href="mailto:rsj1001@gmail.com?subject=ToDoDaily%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EB%AC%B8%EC%9D%98">rsj1001@gmail.com</a>으로 보내주세요.</p>
+
+  <hr style="border: none; border-top: 1px solid var(--line); margin: 40px 0;" />
+
+  <section id="english" lang="en">
+    <h1 style="font-size: 24px;">Privacy Policy</h1>
+    <p class="muted small">Last updated: 2026-08-22</p>
+
+    <div class="callout">
+      <strong>In short</strong> — ToDoDaily collects no personal data. No accounts, no ads, no analytics, no developer servers. Everything stays on your device and in your own iCloud.
+    </div>
+
+    <h2><span class="no">1</span>Data we collect</h2>
+    <p>None. ToDoDaily has no sign-up, uses no advertising or analytics SDKs, and the developer operates no servers. Nothing you create in the app is ever sent to the developer.</p>
+
+    <h2><span class="no">2</span>Storage and iCloud sync</h2>
+    <p>Your to-dos are stored in a database on your device. If you turn on iCloud sync, data is synced between your iPhone, iPad, Mac, and Apple Watch through <strong>your Apple account's private iCloud database</strong>, protected by Apple's iCloud security. The developer cannot access it.</p>
+
+    <h2><span class="no">3</span>On-device AI</h2>
+    <p>The "task breakdown" feature runs entirely on your device — via on-device Apple Intelligence where available, or built-in rules otherwise. Your tasks are never sent to any external server.</p>
+
+    <h2><span class="no">4</span>Permissions</h2>
+    <ul>
+      <li><strong>Notifications</strong> — for daily reminders and due-date alerts. All notifications are scheduled locally.</li>
+      <li><strong>Calendar (optional)</strong> — shows your Apple Calendar events read-only if enabled; writes events only when you use "export to Calendar".</li>
+      <li><strong>Reminders (optional)</strong> — requested only when you use "export to Reminders".</li>
+      <li><strong>Siri &amp; dictation</strong> — voice input is handled under Apple's privacy policy.</li>
+    </ul>
+
+    <h2><span class="no">5</span>Deleting and exporting your data</h2>
+    <p>Deleting the app removes its data from your device. iCloud data can be removed in Settings &gt; Apple Account &gt; iCloud. You can export to Apple Reminders or Calendar from the app's settings.</p>
+
+    <h2><span class="no">6</span>Children's privacy</h2>
+    <p>ToDoDaily is rated 4+ and collects no personal data from anyone, of any age.</p>
+
+    <h2><span class="no">7</span>Changes</h2>
+    <p>Updates to this policy will be posted on this page with a new date above.</p>
+
+    <h2><span class="no">8</span>Contact</h2>
+    <p>Questions? Email <a href="mailto:rsj1001@gmail.com?subject=ToDoDaily%20Privacy">rsj1001@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <p><a href="./index.html">← ToDoDaily 지원</a></p>
+    <p>© 2026 Dongha Ryu</p>
+  </footer>
+
+</div>
 </body>
 </html>
