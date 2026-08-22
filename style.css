@@ -34,7 +34,7 @@ body {
 .wrap {
   max-width: 640px;
   margin: 0 auto;
-  padding: 48px 20px 40px;
+  padding: 20px 20px 40px;
 }
 
 /* 제목만 세리프 — 다도의 차분함. 본문은 시스템 산세리프로 조용하게 */
@@ -127,6 +127,6 @@ footer {
 .stages svg { display: block; }
 
 @media (max-width: 480px) {
-  .wrap { padding: 32px 16px 32px; }
+  .wrap { padding: 14px 16px 32px; }
   h1 { font-size: 26px; }
 }
